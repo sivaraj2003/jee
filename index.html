@@ -28,7 +28,7 @@
 
     async function sendMessage(text) {
       addMessage(text, 'user');
-      const res = await fetch('https://d03ae963-89e1-4bb2-b134-fed6cb4b0555-00-pst8irlfgu52.kirk.replit.dev/', {  // <-- Replace with your backend URL
+      const res = await fetch('https://d03ae963-89e1-4bb2-b134-fed6cb4b0555-00-pst8irlfgu52.kirk.replit.dev/ask', {  // <-- Replace with your backend URL
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ message: text })
